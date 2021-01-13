@@ -10,11 +10,28 @@
         
         font-weight: bold;
         font-size: 40px;
+        
+        .loading{
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0px;
+    top:0px;
+    background:#fff;
+    z-index:1000; /* 이 값으로 레이어의 위치를 조정합니다. */
+}
       }
     </style>
+    <script>
+    $(window).load(function(){
+        $(".loading").fadeOut();
+    });
+</script>
   </head>
   <body>
     <h1>예은교 온라인 예배</h1>
     <span class="text-rainbow">예은은 우리를 구원하신다.</span>
+    <div class="loading" style="background-color: #080B4B"></div>
   </body>
+
 </html>
